@@ -3,7 +3,7 @@ services:
     image: mysql:8.0
     restart: always
     ports:
-      - ${DB_PORT:-33062}:33062
+      - ${DB_PORT:-3306}:3306
     volumes:
       - db:/var/lib/mysql
     environment:
